@@ -5,22 +5,62 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+    font-family: 'Hanken Grotesk', sans-serif;
+}
+
+@font-face {
+    font-family: 'Hanken Grotesk';
+    src: url(/results-summary-component-main/assets/fonts/HankenGrotesk-VariableFont_wght.ttf);
 }
 
 .container {
-    background-color: antiquewhite;
     width: 80vh;
     height: 500px;
     display: flex;
 }
 
-.left { 
-    border: solid black 5px;
-    background-color: aquamarine;
-    flex: 1;
-    text-align: center;
+.title {
+    opacity: 70%;
 }
 
+p {
+    font-size: 18px;
+}
+
+.left, .circle {
+    background: linear-gradient(to bottom, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+}
+
+.left { 
+    flex: 1;
+    text-align: center;
+    color: white;
+    border-radius: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle {
+    width: 200px;
+    height: 200px;
+    background-color: purple;
+    display: inline-block;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.score {
+    font-size: 60px;
+    font-weight: bolder;
+}
+
+.total {
+    opacity: 70%;
+}
 
 .right {
     border: solid black 5px;
