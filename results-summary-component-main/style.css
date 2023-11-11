@@ -11,11 +11,28 @@ body {
     background-color: antiquewhite;
     width: 80vh;
     height: 500px;
+    display: flex;
+}
+
+.left { 
+    border: solid black 5px;
+    background-color: aquamarine;
+    flex: 1;
+    text-align: center;
 }
 
 
+.right {
+    border: solid black 5px;
+    background-color: palegreen;
+    flex: 1; 
+    text-align: center;
+}
 
-
+.right li{
+    list-style-type: none;
+    border: solid white 3px;
+}
 
 
 
